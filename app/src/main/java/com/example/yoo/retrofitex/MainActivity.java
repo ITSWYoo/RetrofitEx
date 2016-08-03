@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         final LinearLayoutManager manager = new LinearLayoutManager(getApplication(), LinearLayoutManager.VERTICAL, false);
         mainActivity_recyclerview.setLayoutManager(manager);
+
+        //add item scroll last postion
         mainActivity_recyclerview.addOnScrollListener(new RecyclerView.OnScrollListener() {
             boolean isLastItem;
             @Override
